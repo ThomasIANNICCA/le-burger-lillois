@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Lexend:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 100vh;
+    background-image: url('./assets/background_burger.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.left-section, .right-section{
+    background-color: #0a0e1052;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0a0e1098;
+}
+
+.right-section{
+    height: 80%;
+    width: 50%;
+}
+
+/* LEFT SECTION */ 
+
+.left-section__presentation, .left-section__form, select, button{
+    font-size: 1.5rem;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 60%;
+    width: 30%;
+
+}
+
+.section__title{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+
+/* FORMULAIRE */
+.left-section__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-district, .form-delivery{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-delivery__title, .form-district__title{
+    margin: 10px 0;
+}
+
+select, button{
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 2px solid #191923;
+}

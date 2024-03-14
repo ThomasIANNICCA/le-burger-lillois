@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Le Burger Lillois</title>
 </head>
 <body>
+    <main class="main-container">
 
-    <h1>Bienvenue sur le Burger Lillois !</h1>
-    
+        <section class="left-section">
+
+            <h1 class ="section__title">Bienvenue sur le Burger Lillois !</h1>
+            
+            <p class ="left-section__presentation">Votre guide ultime pour découvrir les meilleures saveurs entre deux pains à Lille. Que vous soyez amateur de viande juteuse ou adepte des alternatives végétales, embarquez dans un voyage culinaire à travers les meilleurs burgers de la ville.</p>
+
+            <form class="left-section__form">
+
+                <div class="form-district">
+
+                    <label class="form-district__title for="district">Choisir un quartier</label>
+
+                    <select name="district" id="district">
+
+                        <option value="0">Choisissez</option>
+                        <option value="1">Vieux-Lille</option>
+                        <option value="2">Lile-Centre</option>
+                        <option value="3">Lille-Sud</option>
+
+                    </select>
+
+                </div>
+                
+                <div class="form-delivery">
+
+                    <p class="form-delivery__title">A déguster</p>
+
+                    <div class="form-delivery__options">
+                        <input type="checkbox" id="place" name="place" value="place" />
+                        <label for="place">Sur place</label>
+                        <input type="checkbox" id="home" name="home" value="home" />
+                        <label for="home">A emporter</label>
+                    </div>
+                    
+                </div>
+
+                <button>Buzzz'</button>
+
+            </form>
+
+        </section>
+
+        <section class="right-section">
+
+            <h2 class="section__title">Notre sélection</h2>
+
+        </section>
+
+    </main>
 </body>
 </html>
