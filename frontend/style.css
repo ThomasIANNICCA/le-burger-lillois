@@ -7,7 +7,7 @@
 
 .main-container{
     height: 100vh;
-    background-image: url('./assets/background_burger.jpg');
+    background-image: url('./assets/burger3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,9 +20,9 @@
 }
 
 .left-section, .right-section{
-    background-color: #0a0e1052;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #0a0e1098;
+    box-shadow: 1px 1px 5px #000;
+    background-color: #0000002c;
 }
 
 .right-section{
@@ -31,6 +31,9 @@
 }
 
 /* LEFT SECTION */ 
+.section__title, .left-section__presentation, .form-district__title, .form-delivery__title, .form-delivery__options{
+    text-shadow: 1px 1px 5px #000;
+} 
 
 .left-section__presentation, .left-section__form, select, button{
     font-size: 1.5rem;
@@ -42,18 +45,14 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    height: 60%;
+    height: 70%;
     width: 30%;
-
 }
 
 .section__title{
     font-size: 2rem;
     text-transform: uppercase;
 }
-
-
-
 
 /* FORMULAIRE */
 .left-section__form{
@@ -65,11 +64,18 @@
 }
 
 .form-district, .form-delivery{
-    margin: 10px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.form-district{
+    margin: 20px 0;
+}
+
+.form-delivery{
+    margin: 0 0 10px 0;
 }
 
 .form-delivery__title, .form-district__title{
@@ -77,7 +83,9 @@
 }
 
 select, button{
+    cursor: pointer;
     background-color: #FFF;
     border-radius: 5px;
+    padding: 10px;
     border: 2px solid #191923;
 }
