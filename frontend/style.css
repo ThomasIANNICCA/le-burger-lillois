@@ -23,6 +23,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
     background-color: #0000002c;
+    padding: 20px;
 }
 
 
@@ -40,7 +41,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
     height: 70%;
     width: 30%;
 }
@@ -93,6 +93,11 @@ select, button{
     height: 80%;
     width: 50%;
     overflow-y: scroll;
+    display: none;
+}
+
+.active{
+    display: block;
 }
 
 .right-section__container{
@@ -132,5 +137,4 @@ select, button{
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-
 }
