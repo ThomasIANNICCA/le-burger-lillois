@@ -27,4 +27,20 @@ class DistrictController extends Controller
 
     }
 
+    public function getRestaurantbyDistrictId($id)
+    {
+        // Get item or send 404 response if not
+        $item = District::find($id);
+        // Si on a un résultat
+        if (!empty($item)) {
+
+            $restaurants = $item->restaurants;
+
+            // Return JSON of this list
+            return response()->json($restaurants, 200);
+        } else { // Sinon
+            // HTTP status code 404 Not Found
+            return response('', 404);
+        }
+    }
 }

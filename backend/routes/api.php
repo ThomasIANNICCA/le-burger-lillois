@@ -22,3 +22,6 @@ Route::get('district/{id}', [DistrictController::class, 'show']);
 // --------- RESTAURANTS---------
 Route::get('restaurant', [RestaurantController::class, 'list']);
 Route::get('restaurant/{id}', [RestaurantController::class, 'show']);
+
+// ---------- RESTAURANT D'UN DISTRICT --------
+Route::get('district/{id}/restaurant', [DistrictController::class, 'getRestaurantByDistrictId']);

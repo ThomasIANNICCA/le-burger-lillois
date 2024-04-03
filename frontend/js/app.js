@@ -1,6 +1,4 @@
 const app = {
-
-    routeAllDistricts: "http://localhost:8000/api/district/",
     routeAllRestaurants: "http://localhost:8000/api/restaurant/",
 
 
@@ -13,7 +11,7 @@ const app = {
     loadAllDistricts: async function(){
         try {
 
-            const httpResponse = await fetch(app.routeAllDistricts,
+            const httpResponse = await fetch("http://localhost:8000/api/district/",
                 {
                     method : 'GET'
                 });
@@ -51,7 +49,18 @@ const app = {
     },
 
     showRestaurant: async function(dataId){
-        
+        try {
+            const httpResponse = await fetch("http://localhost:8000/api/district/" + dataId + '/restaurant')
+
+            const jsonRestaurant = await httpResponse.json()
+
+            console.log(jsonRestaurant);
+        } catch (error) {
+            return {
+                httpStatus: 500,
+                message: error
+            }
+        }
     }
     
 
