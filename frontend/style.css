@@ -93,12 +93,8 @@ select, button{
     height: 80%;
     width: 50%;
     overflow-y: scroll;
-    display: none;
 }
 
-.active{
-    display: block;
-}
 
 .right-section__container{
     display: flex;

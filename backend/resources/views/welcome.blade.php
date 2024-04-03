@@ -20,20 +20,25 @@
         </style>
     </head>
     <body>
-        <h1>Oups ! On dirait que la fête se passe ailleurs&hellip;</h1>
-        <h2>As-tu regardé dans <code>routes/api.php</code> ?</h2>
-        <!-- 
-                     . 
+        <h1>Routes : </h1>
+        <ul>
+            <li>api/districts : tous les quartiers</li>
+            <li>api/districts/{id} : le quartier sélectionné par l'id</li>
+            <li>api/districts : tous les restaurants</li>
+            <li>api/districts/{id} : le restaurant sélectionné par l'id</li>
+        </ul>
+        <!--
+                     .
                     /'
                    //
-               .  //           
+               .  //
                |\//7
               /' " \
-             .   . .  
+             .   . .
              | (    \     '._
              |  '._  '    '. '
              /    \'-'_---. ) )
-            .              :.' 
+            .              :.'
             |               \
             | .    .   .     .
             ' .    |  |      |
