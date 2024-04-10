@@ -101,8 +101,7 @@ select, button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: 2px solid yellow */
+    position: relative;
 }
 
 .result-element{
@@ -116,10 +115,26 @@ select, button{
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
     margin: 20px 0;
+    transition: 0.2s;
 }
 
+.result-element:hover{
+    scale: 1.01;
+}
+
+.result-element--hidden {
+    display: none;
+  }
 .result-element__description{
     margin: 0 100px;
+}
+
+.result-element__description ul{
+    list-style-type: none;
+}
+
+.result-element__description li{
+margin: 15px 0 ;
 }
 
 .result-element__image{
@@ -133,4 +148,11 @@ select, button{
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.message{
+    position: absolute;
+    top: 200px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #000
 }
